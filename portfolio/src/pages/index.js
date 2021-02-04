@@ -8,7 +8,6 @@ const IndexPage = () => (
  <>
     <SEO title="Home" />
     <Intro/>
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </>
 )
 
