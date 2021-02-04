@@ -1,13 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Intro from "../components/Intro/Intro"
+import Intro from "../components/Intro/Intro";
+import TopNavBar from "../components/TopNavBar/TopNavBar";
+import AboutMe from "../components/AboutMe/AboutMe";
 import SEO from "../components/seo"
 
 const IndexPage = () => (
  <>
     <SEO title="Home" />
+    <TopNavBar/>
     <Intro/>
+    <AboutMe/>
   </>
 )
 

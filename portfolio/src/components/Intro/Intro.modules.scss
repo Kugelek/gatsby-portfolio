@@ -1,34 +1,95 @@
 @import "../../variables";
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
+
 .intro {
   width: 100vw;
   height: 100vh;
   background-color: $color-primary;
   color: white;
-  // background-image: radial-gradient(
-  //     circle,
-  //     rgba($color-primary, 0.2599614845938375) 24%,
-  //     rgba($color-primary, 0.8136029411764706) 84%,
-  //     rgba($color-primary, 0.9955917366946778) 95%
-  //   ),
-  //   url("../../images/code2.jpg");
-  // background-repeat: no-repeat;
-  //   &__whitespace {
-  //     background-color: white;
-  //     height: 55vh;
-  //   }
-  &__headline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
     position: absolute;
-    top: 19vh;
-    left: 17vw;
+    content: "";
+    clip-path: polygon(65% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: rgba($color-secondary, 0.1);
+    width: 20vw;
+    height: 90%;
+    top: 10%;
+    left: 50%;
+    @media (max-width: 900px) {
+      width: 30vw;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: rgba($color-secondary, 0.1);
+    clip-path: polygon(75% 0%, 100% 0%, 25% 100%, 0% 70%);
+    width: 20vw;
+    height: 90%;
+    top: 10%;
+    left: 30%;
+    @media (max-width: 900px) {
+      width: 30vw;
+    }
+  }
+
+  &__headings {
+    margin-top: 6.5vh;
+    background-color: rgba(orangered, 0.07);
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    font-family: "Red Hat Display", sans-serif;
+  }
+
+  &__headline {
+  }
+  &__headline--main {
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    color: $color-almost-white;
+    font-size: 12rem;
+    // font-weight: 600;
+    letter-spacing: 1.1rem;
+    line-height: 13rem;
+    //text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    @media (max-width: 1600px) {
+      left: 53%;
+    }
+    @media (max-width: 1350px) {
+      font-size: 9rem;
+      left: 55%;
+    }
+  }
+
+  &__headline--hor {
+    position: absolute;
+    top: 8%;
+    left: 28%;
     font-size: 4rem;
     font-weight: 500;
 
     text-transform: uppercase;
   }
+  &__headline--horrev {
+    position: absolute;
+    bottom: 8%;
+    right: 28%;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
   &__headline--vert {
     position: absolute;
-    top: 30vh;
-    left: 12vw;
+    top: 10%;
+    left: 25%;
     font-size: 4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -36,14 +97,15 @@
     text-orientation: sideways;
     transform: scale(-1);
   }
-  &__headline--main {
+  &__headline--vertrev {
     position: absolute;
-    top: 25vh;
-    left: 20vw;
-    text-align: center;
-    font-size: 8rem;
-    font-weight: 300;
-    letter-spacing: 1.1rem;
+    bottom: 10%;
+    right: 25%;
+    font-size: 4rem;
+    font-weight: 500;
     text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: scale(-1);
   }
 }
