@@ -8,6 +8,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
+      }
+    },
+   
+    {
       resolve: "gatsby-plugin-prettier-eslint",
       // this is the default configuration, override only what you need
       options: {

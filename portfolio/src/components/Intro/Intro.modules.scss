@@ -1,9 +1,10 @@
-@import "../../variables";
-@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
+@import '../../variables';
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
 
 .intro {
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
   background-color: $color-primary;
   color: white;
   position: relative;
@@ -13,7 +14,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     clip-path: polygon(65% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-color: rgba($color-secondary, 0.1);
     width: 20vw;
@@ -26,7 +27,7 @@
   }
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     background-color: rgba($color-secondary, 0.1);
     clip-path: polygon(75% 0%, 100% 0%, 25% 100%, 0% 70%);
     width: 20vw;
@@ -44,7 +45,7 @@
     width: 100vw;
     height: 60vh;
     position: relative;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
   }
 
   &__headline {

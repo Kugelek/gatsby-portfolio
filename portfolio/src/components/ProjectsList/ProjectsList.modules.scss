@@ -1,0 +1,27 @@
+@import '../../variables';
+.projects {
+  width: 100vw;
+  height: auto;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    & > * {
+      width: 80vw;
+    }
+  }
+  &__title {
+    color: white;
+    font-size: 8rem;
+    font-weight: 300;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+  }
+}
