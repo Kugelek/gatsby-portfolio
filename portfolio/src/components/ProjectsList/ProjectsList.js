@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import './ProjectsList.modules.scss'
-import { Projects } from '../../data/Projects'
-import ProjectItem from './ProjectItem'
+import './ProjectsList.modules.scss';
+import { Projects } from '../../data/Projects';
+import ProjectItem from './ProjectItem';
 // const projects = [
 //     {
 //         name: "TeamShips.io",
@@ -48,9 +48,9 @@ import ProjectItem from './ProjectItem'
 
 //       },
 // ]
-const ProjectsList = () => {
+const ProjectsList = ({ projRef }) => {
   return (
-    <main className="projects">
+    <main ref={projRef} className="projects">
       <h1 className="projects__title">
         Let's see some projects I've been developing!
       </h1>
@@ -60,7 +60,7 @@ const ProjectsList = () => {
         ))}
       </ul>
     </main>
-  )
-}
+  );
+};
 
-export default ProjectsList
+export default ProjectsList;

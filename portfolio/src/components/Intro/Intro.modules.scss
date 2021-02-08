@@ -109,4 +109,27 @@
     text-orientation: sideways;
     transform: scale(-1);
   }
+
+  &__scrolldown {
+    width: 60px;
+    position: absolute;
+    top: 90%;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    animation: arrowUpAndDown 2s infinite;
+  }
+}
+
+@keyframes arrowUpAndDown {
+  0% {
+    top: 90%;
+  }
+  30% {
+    top: 87%;
+    width: 61px;
+  }
+
+  100% {
+    top: 90%;
+  }
 }

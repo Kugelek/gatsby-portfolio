@@ -1,10 +1,10 @@
-import React from 'react'
-import { ReactLogo, NodeLogo, TsLogo, SassLogo } from '../TechLogos/TechLogos'
-import './AboutMe.modules.scss'
+import React from 'react';
+import { ReactLogo, NodeLogo, TsLogo, SassLogo } from '../TechLogos/TechLogos';
+import './AboutMe.modules.scss';
 
-const AboutMe = () => {
+const AboutMe = ({ aboutmeRef }) => {
   return (
-    <section className="aboutme">
+    <section ref={aboutmeRef} className="aboutme">
       <div className="aboutme__container">
         <div className="aboutme__text">
           <h3 className="aboutme__heading">Main skills</h3>
@@ -51,7 +51,7 @@ const AboutMe = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;
