@@ -1,8 +1,10 @@
-import React from 'react'
-import ImageGallery from 'react-image-gallery'
-import './ProjectItem.modules.scss'
-import GhIcon from '../../images/github.png'
-import DetailsIcon from '../../images/more.png'
+import React from 'react';
+import ImageGallery from 'react-image-gallery';
+import './ProjectItem.modules.scss';
+import GhIcon from '../../images/github.png';
+import DetailsIcon from '../../images/more.png';
+import TechStackPills from '../TechStackPills/TechStackPills';
+
 const ProjectItem = ({ projectData, photos }) => {
   return (
     <article className="projectitem">
@@ -18,6 +20,7 @@ const ProjectItem = ({ projectData, photos }) => {
         <p className="projectitem__description">
           {projectData.descriptionShort + '... '}
         </p>
+        <TechStackPills techs={projectData.techStack} />
         <a href="#">
           <img
             className="projectitem__details-icon"
@@ -30,7 +33,7 @@ const ProjectItem = ({ projectData, photos }) => {
         </a>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default ProjectItem
+export default ProjectItem;

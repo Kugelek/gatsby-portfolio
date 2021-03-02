@@ -38,3 +38,32 @@
     }
   }
 }
+
+.burger {
+  background-color: blue;
+  width: 4rem;
+  height: 3px;
+  margin: 0.5rem;
+  margin-right: 5vw;
+  cursor: pointer;
+  z-index: 500;
+
+  position: relative;
+  border-radius: 3px;
+  &::before,
+  &::after {
+    background-color: blue;
+    width: 4rem;
+    height: 3px;
+    position: absolute;
+    border-radius: 3px;
+    content: '';
+  }
+
+  &::before {
+    top: 1.05rem;
+  }
+  &::after {
+    top: -1.05rem;
+  }
+}

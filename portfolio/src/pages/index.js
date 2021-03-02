@@ -4,6 +4,10 @@ import Intro from '../components/Intro/Intro';
 import TopNavBar from '../components/TopNavBar/TopNavBar';
 import AboutMe from '../components/AboutMe/AboutMe';
 import ProjectsList from '../components/ProjectsList/ProjectsList';
+import Contact from '../components/Contact/Contact';
+import FindCv from '../components/FindCv/FindCv';
+import Footer from '../components/Footer/Footer';
+
 import SEO from '../components/seo';
 
 const IndexPage = () => {
@@ -38,6 +42,9 @@ const IndexPage = () => {
       <Intro scrollAction={executeScroll} introRef={introRef} />
       <AboutMe aboutmeRef={aboutmeRef} />
       <ProjectsList projRef={projectsRef} />
+      <Contact />
+      <FindCv />
+      <Footer />
     </>
   );
 };
