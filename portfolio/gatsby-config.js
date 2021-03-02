@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/gatsby-portfolio',
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -11,13 +12,13 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets/
-        }
-      }
+          include: /assets/,
+        },
+      },
     },
-   
+
     {
-      resolve: "gatsby-plugin-prettier-eslint",
+      resolve: 'gatsby-plugin-prettier-eslint',
       // this is the default configuration, override only what you need
       options: {
         cwd: process.cwd(), // path to a directory that should be considered as the current working directory
@@ -27,11 +28,11 @@ module.exports = {
         onChangeFullScanFormat: false, // if true, on file save always perform full scan format
         prettierLast: false, // if true, will run Prettier after ESLint
         ignorePatterns: [
-          "**/node_modules/**/*",
-          "**/.git/**/*",
-          "**/dist/**/*",
-          ".cache/**/*",
-          "public/**/*",
+          '**/node_modules/**/*',
+          '**/.git/**/*',
+          '**/dist/**/*',
+          '.cache/**/*',
+          'public/**/*',
         ], // string or array of paths/files/globs to ignore
         prettier: {
           patterns: [], // string or array of paths/files/globs to include related only to Prettier
@@ -41,7 +42,7 @@ module.exports = {
         eslint: {
           patterns: [], // string or array of paths/files/globs to include related only to ESLint
           ignorePatterns: [], // string or array of paths/files/globs to exclude related only to ESLint
-          formatter: "stylish", // set custom or third party formatter
+          formatter: 'stylish', // set custom or third party formatter
           maxWarnings: undefined, // number of max warnings allowed, when exceed it will fail Gatsby build
           emitWarning: true, // if true, will emit lint warnings
           failOnError: false, // if true, any lint error will fail the build, you may set true only in your prod config
@@ -60,9 +61,9 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-   
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

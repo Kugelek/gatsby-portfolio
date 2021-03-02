@@ -23,6 +23,7 @@
     "react-helmet": "^6.1.0",
     "react-image-gallery": "^1.0.8",
     "react-scripts": "^4.0.2",
+    "react-transition-group": "^4.4.1",
     "sass": "^1.32.6"
   },
   "devDependencies": {
@@ -39,7 +40,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",

@@ -22,19 +22,65 @@
   &__logo {
     cursor: pointer;
   }
-  &__nav {
-    margin-right: 5vw;
-  }
-  &__nav-item {
-    font-size: 2rem;
-    padding: 0.5rem 1.5rem;
-    margin-left: 2vw;
-    cursor: pointer;
-    color: $color-primary;
-    transition: 0.4s color ease-out;
+}
 
-    &:hover {
-      color: $color-secondary;
+.burger {
+  background-color: $color-primary;
+  width: 4rem;
+  height: 0.5rem;
+  cursor: pointer;
+  z-index: 10000;
+  // transition: 0.5s all ease-in-out;
+  &--opened {
+    background-color: white;
+    &::before,
+    &::after {
+      background-color: white;
     }
+  }
+
+  position: relative;
+  border-radius: 3px;
+  &::before,
+  &::after {
+    background-color: $color-primary;
+    width: 4rem;
+    height: 0.5rem;
+    position: absolute;
+    border-radius: 3px;
+    content: '';
+  }
+
+  &::before {
+    top: 1.5rem;
+    left: 0%;
+  }
+  &::after {
+    top: -1.5rem;
+    left: 0%;
+  }
+  &--opened {
+    &::before,
+    &::after {
+      background-color: white;
+    }
+  }
+}
+
+.burger-outer {
+  padding: 1.5rem 0.5rem;
+  margin-right: 5vw;
+  width: 10vw;
+  height: 10vw;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  z-index: 10000;
+  cursor: pointer;
+  background-color: transparent;
+  &--opened {
   }
 }
