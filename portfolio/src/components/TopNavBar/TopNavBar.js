@@ -30,9 +30,28 @@ const TopNavBar = ({ scrollAction }) => {
     return () => window.removeEventListener('scroll', handleScrollingEffects);
   }, []);
 
-  // const navigation = (
-
-  // );
+  const navigation = (
+    <nav className="topbar__nav">
+      <span
+        className="topbar__nav-item"
+        onClick={scrollAction.bind(this, 'PROJECTS')}
+      >
+        Projects
+      </span>
+      <span
+        className="topbar__nav-item"
+        onClick={scrollAction.bind(this, 'CONTACT')}
+      >
+        Contact me
+      </span>
+      <span
+        className="topbar__nav-item"
+        onClick={scrollAction.bind(this, 'RESUME')}
+      >
+        Resume
+      </span>
+    </nav>
+  );
 
   return (
     <section className="topbar">
