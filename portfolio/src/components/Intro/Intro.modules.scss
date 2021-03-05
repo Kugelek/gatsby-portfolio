@@ -24,6 +24,9 @@
     @media (max-width: 900px) {
       width: 30vw;
     }
+    @media (max-width: 600px) {
+      width: 50vw;
+    }
   }
   &::after {
     position: absolute;
@@ -37,6 +40,10 @@
     @media (max-width: 900px) {
       width: 30vw;
     }
+    @media (max-width: 600px) {
+      width: 50vw;
+      left: 20%;
+    }
   }
 
   &__headings {
@@ -49,6 +56,10 @@
   }
 
   &__headline {
+    font-size: 4rem;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
   &__headline--main {
     position: absolute;
@@ -58,9 +69,11 @@
     font-size: 12rem;
     // font-weight: 600;
     letter-spacing: 1.1rem;
+    text-shadow: 2px 2px 2px white;
     line-height: 13rem;
     //text-transform: uppercase;
     transform: translate(-50%, -50%);
+    animation: mainTextEntrance 4s;
     @media (max-width: 1600px) {
       left: 53%;
     }
@@ -68,46 +81,84 @@
       font-size: 9rem;
       left: 55%;
     }
+    @media (max-width: 800px) {
+      left: 50%;
+      font-size: 8.5rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 8rem;
+      letter-spacing: 0.5rem;
+      line-height: 8.5rem;
+    }
   }
 
   &__headline--hor {
     position: absolute;
     top: 8%;
     left: 28%;
-    font-size: 4rem;
+    // font-size: 4rem;
     font-weight: 500;
 
     text-transform: uppercase;
+    animation: horizontalTextEntrance 5.5s;
+    @media (max-width: 1200px) {
+      left: 20%;
+    }
+    @media (max-width: 800px) {
+      left: 12%;
+    }
   }
   &__headline--horrev {
     position: absolute;
     bottom: 8%;
     right: 28%;
-    font-size: 4rem;
+    // font-size: 4rem;
     font-weight: 500;
     text-transform: uppercase;
+    animation: reverseHorizontalTextEntrance 5.5s;
+
+    @media (max-width: 1200px) {
+      right: 15%;
+    }
+    @media (max-width: 800px) {
+      right: 14%;
+    }
   }
   &__headline--vert {
     position: absolute;
     top: 10%;
     left: 25%;
-    font-size: 4rem;
+    // font-size: 4rem;
     font-weight: 500;
     text-transform: uppercase;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     transform: scale(-1);
+    animation: steppedEntranceTextVert 3.5s;
+    @media (max-width: 1200px) {
+      left: 14%;
+    }
+    @media (max-width: 800px) {
+      left: 4%;
+    }
   }
   &__headline--vertrev {
     position: absolute;
     bottom: 10%;
     right: 25%;
-    font-size: 4rem;
+    // font-size: 4rem;
     font-weight: 500;
     text-transform: uppercase;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     transform: scale(-1);
+    animation: steppedEntranceTextVertReverse 3.5s;
+    @media (max-width: 1200px) {
+      right: 10%;
+    }
+    @media (max-width: 800px) {
+      right: 7%;
+    }
   }
 
   &__scrolldown {
@@ -126,10 +177,88 @@
   }
   30% {
     top: 87%;
-    width: 61px;
+    width: 60.5px;
   }
 
   100% {
     top: 90%;
+  }
+}
+
+@keyframes steppedEntranceTextVert {
+  0% {
+    opacity: 50%;
+    top: -50%;
+  }
+  80% {
+    top: 20%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes steppedEntranceTextVertReverse {
+  0% {
+    opacity: 50%;
+    bottom: -50%;
+  }
+  80% {
+    bottom: 15%;
+    opacity: 100%;
+  }
+  100% {
+    bottom: 10%;
+  }
+}
+
+@keyframes horizontalTextEntrance {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+    left: 33%;
+  }
+  60% {
+    opacity: 1;
+    left: 28%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reverseHorizontalTextEntrance {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+    right: 33%;
+  }
+  60% {
+    opacity: 1;
+    right: 28%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainTextEntrance {
+  0% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 2px white;
   }
 }
