@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: '/gatsby-portfolio',
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pobłocki Portfolio`,
+    description: `Portfolio Jakuba Pobłockiego.`,
+    author: `Jakub Pobłocki`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +14,12 @@ module.exports = {
         rule: {
           include: /assets/,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png',
       },
     },
 
