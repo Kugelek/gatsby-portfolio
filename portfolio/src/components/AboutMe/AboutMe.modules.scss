@@ -37,16 +37,14 @@
       margin-left: auto;
       cursor: pointer;
       font-weight: bold;
-      padding: 0.5rem 1rem;
-      // margin-left: -0.25rem;
+
       border-radius: 3px;
-      transition: 0.3s all ease-in-out;
+      transition: 0.5s all ease-in-out;
       margin-top: 4.5rem;
       &:hover {
         // background-color: $color-primary;
         // color: white;
-        text-shadow: 3px 3px 2px rgba($color-primary, 0.2);
-        font-size: 2.6rem;
+        text-shadow: 3px 3px 2px rgba($color-primary, 0.15);
       }
     }
   }
@@ -110,27 +108,36 @@
   }
   &__skills {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     height: auto;
-    align-items: center;
+    width: 90vw;
     flex-wrap: wrap;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
   }
 }
 .skill {
-  margin: 0 3.5vw;
-  min-width: 12vw;
   text-align: center;
-  cursor: pointer;
+  margin: 2vh 1vw;
+  min-height: 25vh;
   transition: 0.3s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: orangered;
 
   &__heading {
     font-size: 2.5rem;
     margin-top: -1rem;
     display: block;
     height: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
   }
   &__description {
     font-size: 1.5rem;
+    max-width: 20vw;
   }
 
   &:hover {
@@ -153,6 +160,11 @@
 }
 .ae3 {
   opacity: 0;
+}
+
+.skills-heading {
+  margin-left: 3vw;
+  margin-top: -5vh;
 }
 
 @keyframes orangeRotate {

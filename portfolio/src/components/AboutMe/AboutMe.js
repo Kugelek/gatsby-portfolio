@@ -7,9 +7,23 @@ const AboutMe = ({ aboutmeRef }) => {
   return (
     <section ref={aboutmeRef} className="aboutme">
       <div className="aboutme__container--single">
-        <h3 className="aboutme__heading">About me</h3>
+        <h3
+          data-aos="fade-zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="700"
+          className="aboutme__heading"
+        >
+          About me
+        </h3>
         <div className="aboutme__info">
-          <div className="aboutme__photo">
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="700"
+            className="aboutme__photo"
+          >
             <img className="aboutme__img" src={MyPhoto} alt="me" />
           </div>
           <div className="aboutme__description">
@@ -20,7 +34,7 @@ const AboutMe = ({ aboutmeRef }) => {
               data-aos-duration="300"
               className="aboutme__subh"
             >
-              Hey, I'm Kuba!
+              Hi, I'm Kuba!
             </h4>
             <p
               data-aos="fade-zoom-in"
@@ -28,7 +42,7 @@ const AboutMe = ({ aboutmeRef }) => {
               data-aos-easing="ease-in-sine"
               data-aos-duration="700"
             >
-              I'm a frontend dev and I love creating web apps.
+              I'm a front-end dev and I love creating web apps.
             </p>
             <p
               data-aos="fade-zoom-in"
@@ -39,24 +53,33 @@ const AboutMe = ({ aboutmeRef }) => {
               Ready for new challenges. Open to offers in Gdańsk and Gdynia. Or
               remote ones... :)
             </p>
-            <span className="cta">Hire me &#x2192;</span>
+            <span
+              data-aos="fade-zoom-in"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="2200"
+              className="cta"
+            >
+              Hire me &#x2192;
+            </span>
           </div>
         </div>
       </div>
       <div className="aboutme__container">
-        <h3 className="aboutme__heading">Main skills</h3>
+        <h3 className="aboutme__heading skills-heading">Main skills</h3>
         <div className="aboutme__skills">
           <div className="skill">
             <ReactLogo />
             <h5 className="skill__heading">React.js</h5>
             <p className="skill__description">
-              Developing frontend layer of web applications
+              Developing frontend layer of web applications. Skillfully using
+              hooks and functional paradigm approach.
             </p>
           </div>
 
           <div className="skill">
             <TsLogo />
-            <h5 className="skill__heading">JS ES6+ / Typescript </h5>
+            <h5 className="skill__heading">JS ES6+ & TypeScript </h5>
             <p className="skill__description">
               Familiarity with modern JavaScript syntax in practise.
             </p>
@@ -66,7 +89,7 @@ const AboutMe = ({ aboutmeRef }) => {
           </div>
           <div className="skill">
             <SassLogo />
-            <h5 className="skill__heading">CSS3 / SCSS</h5>
+            <h5 className="skill__heading">CSS3 & SCSS</h5>
             <p className="skill__description">
               Styling websites & webapps in most up-to-date ways.{' '}
             </p>
