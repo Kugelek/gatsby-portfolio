@@ -14,6 +14,7 @@
 
   &::before {
     position: absolute;
+
     content: '';
     clip-path: polygon(65% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-color: rgba($color-secondary, 0.1);
@@ -21,6 +22,7 @@
     height: 90%;
     top: 10%;
     left: 50%;
+    animation: stripeEntrance 1s;
     @media (max-width: 900px) {
       width: 30vw;
     }
@@ -37,6 +39,7 @@
     height: 90%;
     top: 10%;
     left: 30%;
+    animation: stripeEntrance 2.5s;
     @media (max-width: 900px) {
       width: 30vw;
     }
@@ -52,6 +55,7 @@
     width: 100vw;
     height: 60vh;
     position: relative;
+    animation: blurEntrance 0.3s;
     font-family: 'Red Hat Display', sans-serif;
   }
 
@@ -73,7 +77,9 @@
     line-height: 13rem;
     //text-transform: uppercase;
     transform: translate(-50%, -50%);
+
     animation: mainTextEntrance 4s;
+
     @media (max-width: 1600px) {
       left: 53%;
     }
@@ -256,9 +262,30 @@
   0% {
     opacity: 0;
     text-shadow: none;
+
+    letter-spacing: 2rem;
   }
+  50% {
+    letter-spacing: 1.1rem;
+  }
+
   100% {
     opacity: 1;
     text-shadow: 2px 2px 2px white;
+  }
+}
+
+@keyframes stripeEntrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blurEntrance {
+  0% {
+    opacity: 0;
   }
 }

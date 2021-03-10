@@ -14,7 +14,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // @media (max-width: 1600px) {
+  //   height: 12vh;
+  // }
 
+  // @media (max-width: 1400px) {
+  //   height: 14vh;
+  // }
+
+  @media (max-width: 1000px) {
+    height: 16vh;
+  }
   &__logobox {
     padding: 0.5rem 0;
     margin-left: 5vw;

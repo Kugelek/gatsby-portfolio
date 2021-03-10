@@ -1,7 +1,7 @@
 @import '../../variables';
 .aboutme {
   width: 100vw;
-  height: 80vh;
+  min-height: 100vh;
   max-width: 100%;
   background-color: white;
   display: flex;
@@ -9,30 +9,115 @@
   align-items: center;
   justify-content: flex-start;
 
-  &__container {
-    margin-top: 11vh;
-    // background-color: rgba(orangered, 0.1);
-    width: 80vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  &__subh {
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+    animation: entrance 1s;
+  }
+  &__img {
+    width: 25rem;
+    border-radius: 50%;
+    z-index: 15;
+    position: relative;
   }
 
-  &__text {
+  &__description {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    height: auto;
+    color: $color-light-black;
+    & > p {
+      font-size: 2.5rem;
+      margin: 2.5rem 0rem;
+    }
+    & > span {
+      font-size: 2.5rem;
+      color: $color-primary;
+      margin-left: auto;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      // margin-left: -0.25rem;
+      border-radius: 3px;
+      transition: 0.3s all ease-in-out;
+      margin-top: 4.5rem;
+      &:hover {
+        // background-color: $color-primary;
+        // color: white;
+        text-shadow: 3px 3px 2px rgba($color-primary, 0.2);
+        font-size: 2.6rem;
+      }
+    }
+  }
+  &__photo {
+    position: absolute;
+
+    top: 40%;
+    left: 15%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 28rem;
+      border-radius: 50%;
+      height: 28rem;
+      top: 0%;
+      z-index: 5;
+      left: 13%;
+      background-color: $color-primary;
+      animation: blueRotate infinite 3.5s;
+    }
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 29rem;
+      border-radius: 50%;
+      height: 29rem;
+      top: -28%;
+      left: 3%;
+      opacity: 0.17;
+      z-index: 6;
+      background-color: orangered;
+      animation: orangeRotate infinite 2.5s;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    &--single {
+      margin-top: 3vh;
+      width: 80vw;
+      position: relative;
+      min-height: 80vh;
+    }
+  }
+
+  &__heading {
+    position: absolute;
     font-size: 5rem;
+    left: 8%;
+    top: 10%;
+    margin-top: 5rem;
     color: $color-light-black;
   }
   &__skills {
     display: flex;
+    height: auto;
     align-items: center;
     flex-wrap: wrap;
   }
 }
 .skill {
   margin: 0 3.5vw;
-  width: 12vw;
+  min-width: 12vw;
   text-align: center;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
@@ -50,5 +135,75 @@
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+.animated-ending {
+  position: absolute;
+  top: 0;
+  left: 115%;
+}
+.ae1 {
+  opacity: 0;
+  animation: swapSpecialties 4s infinite;
+}
+.ae2 {
+  opacity: 0;
+  animation: swapSpecialties 4s 4s infinite;
+}
+.ae3 {
+  opacity: 0;
+}
+
+@keyframes orangeRotate {
+  0% {
+    top: -28%;
+    left: 3%;
+  }
+  50% {
+    top: -5%;
+    left: -10%;
+  }
+  75% {
+    top: -8%;
+    left: -30%;
+  }
+  100% {
+    top: -28%;
+    left: 3%;
+  }
+}
+
+@keyframes blueRotate {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 10%;
+    left: -5%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes swapSpecialties {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes entrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
