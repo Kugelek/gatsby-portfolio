@@ -1,9 +1,12 @@
 @import '../../variables';
 .projectitem {
-  width: 75vw;
-  height: 60vh;
+  width: 50vw;
+  height: 65vh;
   background-color: white;
+
+  color: $color-light-black;
   margin: 15vh 0;
+  margin-left: 25vw;
   padding: 1rem 5vw;
   position: relative;
 
@@ -39,17 +42,47 @@
     right: 0;
   }
   &__heading {
-    font-size: 5rem;
+    font-size: 7rem;
     margin-bottom: 2rem;
+    padding: 2rem 4rem;
     cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      transform: scale(1.05) skew(-2deg) translateX(1rem);
+      text-shadow: 4px 4px 9px rgba($color-primary, 0.2);
+      color: $color-primary;
+    }
   }
   &__description {
     font-size: 2rem;
     color: $color-light-black;
+    padding: 0 4rem;
     margin-bottom: 4vh;
+    position: relative;
+    min-height: 10rem;
+    &::before {
+      position: absolute;
+      top: 0%;
+      left: 3%;
+      content: '';
+      display: block;
+      width: 0.5rem;
+      height: 15rem;
+      background-color: rgba(orangered, 0.4);
+    }
   }
-  &__details-icon {
-    width: 60px;
+  &__iconbox {
+    position: absolute;
+    bottom: -32%;
+    right: 5%;
+  }
+  &__icon {
+    width: 6rem;
+    padding: 1rem;
+    background-color: white;
+    // border-radius: 50%;
+    // border: 3px solid white;
+    // border-radius: 50%;
     cursor: pointer;
     margin: 0 1rem;
   }
@@ -57,10 +90,11 @@
 
 .gallery {
   width: 40vw;
-  padding: 5rem;
+  // padding: 5rem;
   background-color: rgba(orangered, 0.4);
+  border: 20px solid rgba(orangered, 0.3);
   // transform: skew(-3deg);
   position: absolute;
-  top: -20%;
-  left: -10%;
+  top: -10%;
+  left: -55%;
 }

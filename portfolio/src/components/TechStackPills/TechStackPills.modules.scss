@@ -4,11 +4,13 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 40vw;
+    justify-content: flex-start;
+    width: 30vw;
+    margin-left: 3rem;
   }
   &__item {
     padding: 1rem 2rem;
-    margin: 2rem;
+    margin: 1rem;
     background-color: $color-primary;
     color: white;
     font-size: 1.5rem;
