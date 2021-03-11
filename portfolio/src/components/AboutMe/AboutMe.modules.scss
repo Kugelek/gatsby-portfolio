@@ -214,6 +214,21 @@
   margin-left: 3vw;
   margin-top: -5vh;
 }
+.iconbox {
+  width: inherit;
+  // background-color: orange;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  &__icon {
+    width: 4rem;
+    margin: 1rem;
+    transition: 0.3s all ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
 
 @keyframes orangeRotate {
   0% {

@@ -1,17 +1,42 @@
 @import '../../variables';
 .projectitem {
-  width: 80vw;
+  width: 75vw;
   height: 60vh;
   background-color: white;
-  margin: 5vh 0;
+  margin: 15vh 0;
   padding: 1rem 5vw;
+  position: relative;
 
   display: flex;
   align-items: center;
 
+  &::after {
+    position: absolute;
+    top: -5%;
+    right: -3%;
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border: 20px solid rgba(orangered, 0.4);
+  }
+  &::before {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 10rem;
+    background-color: rgba(orangered, 0.4);
+  }
+
   &__details {
     margin-left: 5vw;
     max-width: 35vw;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   &__heading {
     font-size: 5rem;
@@ -31,5 +56,11 @@
 }
 
 .gallery {
-  width: 30vw;
+  width: 40vw;
+  padding: 5rem;
+  background-color: rgba(orangered, 0.4);
+  // transform: skew(-3deg);
+  position: absolute;
+  top: -20%;
+  left: -10%;
 }

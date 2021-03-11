@@ -2,6 +2,8 @@ import React from 'react';
 import { ReactLogo, NodeLogo, TsLogo, SassLogo } from '../TechLogos/TechLogos';
 import './AboutMe.modules.scss';
 import MyPhoto from '../../images/myphoto.jpg';
+import Github from '../../images/github.png';
+import Linkedin from '../../images/linkedin.png';
 
 const AboutMe = ({ aboutmeRef }) => {
   return (
@@ -62,12 +64,38 @@ const AboutMe = ({ aboutmeRef }) => {
             >
               Hire me &#x2192;
             </span>
+            <div className="iconbox">
+              <a href="https://www.linkedin.com/in/jakub-pob%C5%82ocki-510a081a4/">
+                <img
+                  className="iconbox__icon"
+                  src={Linkedin}
+                  alt="linkedin icon"
+                />
+              </a>
+              <a href="https://github.com/Kugelek">
+                <img className="iconbox__icon" src={Github} alt="github icon" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div className="aboutme__container">
-        <h3 className="aboutme__heading skills-heading">Main skills</h3>
-        <div className="aboutme__skills">
+        <h3
+          data-aos="fade-zoom-in"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="500"
+          className="aboutme__heading skills-heading"
+        >
+          Main skills
+        </h3>
+        <div
+          className="aboutme__skills"
+          data-aos="fade-zoom-in"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="500"
+        >
           <div className="skill">
             <ReactLogo />
             <h5 className="skill__heading">React.js</h5>

@@ -10,7 +10,7 @@ const ProjectItem = ({ projectData, photos }) => {
     <article className="projectitem">
       <ImageGallery
         items={photos}
-        thumbnailPosition={'left'}
+        thumbnailPosition={'bottom'}
         showBullets={true}
         additionalClass="gallery"
         showNav={false}
