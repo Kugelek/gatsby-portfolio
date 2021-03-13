@@ -45,8 +45,8 @@ const IndexPage = () => {
       <Intro scrollAction={executeScroll} introRef={introRef} />
       <AboutMe aboutmeRef={aboutmeRef} />
       <ProjectsList projRef={projectsRef} />
-      <Contact />
-      <FindCv />
+      {/* <Contact />
+      <FindCv /> */}
       <Footer />
     </>
   );

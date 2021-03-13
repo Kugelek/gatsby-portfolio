@@ -7,7 +7,13 @@ import TechStackPills from '../TechStackPills/TechStackPills';
 
 const ProjectItem = ({ projectData, photos }) => {
   return (
-    <article className="projectitem">
+    <article
+      className="projectitem"
+      data-aos="fade-zoom-in"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="300"
+    >
       <ImageGallery
         items={photos}
         thumbnailPosition={'bottom'}
@@ -16,15 +22,7 @@ const ProjectItem = ({ projectData, photos }) => {
         showNav={false}
       />
       <div className="projectitem__details">
-        <h1
-          data-aos="fade-zoom-in"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="400"
-          className="projectitem__heading"
-        >
-          {projectData.name}
-        </h1>
+        <h1 className="projectitem__heading">{projectData.name}</h1>
         <p
           data-aos="fade-zoom-in"
           data-aos-offset="200"
@@ -38,24 +36,24 @@ const ProjectItem = ({ projectData, photos }) => {
           className="projectitem__pills"
           techs={projectData.techStack}
         />
-        <div
-          data-aos="zoom-in"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-quad"
-          data-aos-duration="700"
-          className="projectitem__iconbox"
-        >
-          <a href="#">
-            <img
-              className="projectitem__icon"
-              src={DetailsIcon}
-              alt="project details"
-            />
-          </a>
-          <a href={projectData.github}>
-            <img className="projectitem__icon" src={GhIcon} alt="github" />
-          </a>
-        </div>
+      </div>
+      <div
+        data-aos="zoom-in"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-quad"
+        data-aos-duration="400"
+        className="projectitem__iconbox"
+      >
+        <a href="#">
+          <img
+            className="projectitem__icon"
+            src={DetailsIcon}
+            alt="project details"
+          />
+        </a>
+        <a href={projectData.github}>
+          <img className="projectitem__icon" src={GhIcon} alt="github" />
+        </a>
       </div>
     </article>
   );

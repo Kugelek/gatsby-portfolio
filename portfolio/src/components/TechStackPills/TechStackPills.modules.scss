@@ -6,7 +6,11 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 30vw;
+    margin-top: 10vh;
     margin-left: 3rem;
+    @media (max-width: 1300px) {
+      width: 50vw;
+    }
   }
   &__item {
     padding: 1rem 2rem;

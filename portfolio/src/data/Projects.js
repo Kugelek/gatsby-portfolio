@@ -142,10 +142,10 @@ export const Projects = [
         original: blog2,
         thumbnail: blog2th,
       },
-      {
-        original: blog3,
-        thumbnail: blog3th,
-      },
+      // {
+      //   original: blog3,
+      //   thumbnail: blog3th,
+      // },
     ],
     github: 'https://github.com/Kugelek/microblog',
     deployedAt: '',
