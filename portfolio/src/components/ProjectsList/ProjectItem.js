@@ -16,11 +16,20 @@ const ProjectItem = ({ projectData, photos }) => {
         showNav={false}
       />
       <div className="projectitem__details">
-        <h1 className="projectitem__heading">{projectData.name}</h1>
-        <p
-          data-aos-offset="100"
+        <h1
+          data-aos="fade-zoom-in"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="700"
+          data-aos-duration="400"
+          className="projectitem__heading"
+        >
+          {projectData.name}
+        </h1>
+        <p
+          data-aos="fade-zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="900"
           className="projectitem__description"
         >
           {projectData.descriptionShort + '... '}
@@ -29,7 +38,13 @@ const ProjectItem = ({ projectData, photos }) => {
           className="projectitem__pills"
           techs={projectData.techStack}
         />
-        <div className="projectitem__iconbox">
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-quad"
+          data-aos-duration="700"
+          className="projectitem__iconbox"
+        >
           <a href="#">
             <img
               className="projectitem__icon"

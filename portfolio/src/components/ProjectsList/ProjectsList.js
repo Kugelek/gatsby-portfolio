@@ -51,7 +51,13 @@ import ProjectItem from './ProjectItem';
 const ProjectsList = ({ projRef }) => {
   return (
     <main ref={projRef} className="projects">
-      <h1 className="projects__title">
+      <h1
+        className="projects__title"
+        data-aos="fade-zoom-in"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="700"
+      >
         Let's see some projects I've been developing!
       </h1>
       <ul className="projects__list">

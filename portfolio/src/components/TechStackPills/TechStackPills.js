@@ -4,7 +4,15 @@ const TechStackPills = ({ techs }) => {
   return (
     <ul className="pills__list">
       {techs.map((techItem) => (
-        <li className="pills__item">{techItem}</li>
+        <li
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-quad"
+          data-aos-duration="700"
+          className="pills__item"
+        >
+          {techItem}
+        </li>
       ))}
     </ul>
   );
