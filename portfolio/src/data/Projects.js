@@ -1,22 +1,34 @@
-import testimg from '../images/code2.jpg';
 import rap1 from '../images/projectsImages/rap1.png';
-import rap1th from '../images/projectsImages/rap1th.png';
 import rap2 from '../images/projectsImages/rap2.png';
-import rap2th from '../images/projectsImages/rap2th.png';
 import rap3 from '../images/projectsImages/rap3.png';
-import rap3th from '../images/projectsImages/rap3th.png';
+
+import rap1th from '../images/projectsThumbnails/rap1th.png';
+import rap2th from '../images/projectsThumbnails/rap2th.png';
+import rap3th from '../images/projectsThumbnails/rap3th.png';
 
 import ships1 from '../images/projectsImages/ships1.jpg';
 import ships2 from '../images/projectsImages/ships2.png';
 import ships3 from '../images/projectsImages/ships3.gif';
 
+import ships1th from '../images/projectsThumbnails/ships1th.jpg';
+import ships2th from '../images/projectsThumbnails/ships2th.png';
+import ships3th from '../images/projectsThumbnails/ships3th.gif';
+
 import blog1 from '../images/projectsImages/blog1.png';
 import blog2 from '../images/projectsImages/blog2.png';
 import blog3 from '../images/projectsImages/blog3.png';
 
+import blog1th from '../images/projectsThumbnails/blog1th.png';
+import blog2th from '../images/projectsThumbnails/blog2th.png';
+import blog3th from '../images/projectsThumbnails/blog3th.png';
+
 import dzira1 from '../images/projectsImages/dzira1.png';
 import dzira2 from '../images/projectsImages/dzira2.png';
 import dzira3 from '../images/projectsImages/dzira3.png';
+
+import dzira1th from '../images/projectsThumbnails/dzira1th.jpg';
+import dzira2th from '../images/projectsThumbnails/dzira2th.jpg';
+import dzira3th from '../images/projectsThumbnails/dzira3th.jpg';
 //TODO: there's another more gatsby-oriented way to import imgs. Its fine for now but gonna be mess if u develop
 //this section further
 
@@ -49,15 +61,15 @@ export const Projects = [
     photos: [
       {
         original: ships1,
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        thumbnail: ships1th,
       },
       {
         original: ships2,
-        thumbnail: 'https://picsum.photos/id/1015/250/150/',
+        thumbnail: ships2th,
       },
       {
         original: ships3,
-        thumbnail: 'https://picsum.photos/id/1019/250/150/',
+        thumbnail: ships3th,
       },
     ],
     github: 'https://github.com/Kugelek/statki',
@@ -104,7 +116,7 @@ export const Projects = [
         thumbnail: rap3th,
       },
     ],
-    github: '',
+    github: 'https://github.com/Kugelek/rapanalyzer',
     deployedAt: '',
     addictionalInfo: '',
   },
@@ -124,18 +136,18 @@ export const Projects = [
     photos: [
       {
         original: blog1,
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        thumbnail: blog1th,
       },
       {
         original: blog2,
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        thumbnail: blog2th,
       },
       {
         original: blog3,
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        thumbnail: blog3th,
       },
     ],
-    github: '',
+    github: 'https://github.com/Kugelek/microblog',
     deployedAt: '',
     addictionalInfo: 'In progress',
   },
@@ -154,19 +166,19 @@ export const Projects = [
     photos: [
       {
         original: dzira1,
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        thumbnail: dzira1th,
       },
       {
         original: dzira2,
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        thumbnail: dzira2th,
       },
       {
         original: dzira3,
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        thumbnail: dzira3th,
       },
     ],
     github: '',
     deployedAt: '',
-    addictionalInfo: 'In progress',
+    addictionalInfo: '',
   },
 ];
