@@ -7,13 +7,7 @@ import TechStackPills from '../TechStackPills/TechStackPills';
 
 const ProjectItem = ({ projectData, photos }) => {
   return (
-    <article
-      className="projectitem"
-      data-aos="fade-zoom-in"
-      data-aos-offset="200"
-      data-aos-easing="ease-in-sine"
-      data-aos-duration="300"
-    >
+    <article className="projectitem">
       <ImageGallery
         items={photos}
         thumbnailPosition={'bottom'}
@@ -21,7 +15,13 @@ const ProjectItem = ({ projectData, photos }) => {
         additionalClass="gallery"
         showNav={false}
       />
-      <div className="projectitem__details">
+      <div
+        data-aos="fade-zoom-in"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="300"
+        className="projectitem__details"
+      >
         <h1 className="projectitem__heading">{projectData.name}</h1>
         <p
           data-aos="fade-zoom-in"

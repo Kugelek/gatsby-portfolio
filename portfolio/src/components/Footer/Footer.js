@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <img className="footer__logo" src={Logo} alt="poblocki dev footer logo" />
+
       <div className="footer__contact">
         <span className="footer__icon"></span>
         <span className="footer__icon"></span>

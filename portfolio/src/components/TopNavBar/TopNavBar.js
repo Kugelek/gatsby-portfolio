@@ -34,11 +34,18 @@ const TopNavBar = ({ scrollAction }) => {
     <nav className="topbar__nav">
       <span
         className="topbar__nav-item"
+        onClick={scrollAction.bind(this, 'ABOUTME')}
+      >
+        About me
+      </span>
+      <span
+        className="topbar__nav-item"
         onClick={scrollAction.bind(this, 'PROJECTS')}
       >
         Projects
       </span>
-      <span
+
+      {/* <span
         className="topbar__nav-item"
         onClick={scrollAction.bind(this, 'CONTACT')}
       >
@@ -49,7 +56,7 @@ const TopNavBar = ({ scrollAction }) => {
         onClick={scrollAction.bind(this, 'RESUME')}
       >
         Resume
-      </span>
+      </span> */}
     </nav>
   );
 

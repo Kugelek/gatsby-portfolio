@@ -62,7 +62,7 @@ const AboutMe = ({ aboutmeRef }) => {
               data-aos-duration="2200"
               className="cta"
             >
-              Hire me &#x2192;
+              <a href="mailto:poblocki.jakub@gmail.com">Hire me &#x2192;</a>
             </span>
             <div className="iconbox">
               <a href="https://www.linkedin.com/in/jakub-pob%C5%82ocki-510a081a4/">

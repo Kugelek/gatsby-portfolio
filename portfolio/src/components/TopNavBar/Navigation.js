@@ -16,12 +16,21 @@ const Navigation = ({ type, scrollAction, closeMenu }) => {
             className={navItemClasses}
             onClick={(e) => {
               shouldCloseMenu && closeMenu();
+              scrollAction('ABOUTME');
+            }}
+          >
+            About me
+          </span>
+          <span
+            className={navItemClasses}
+            onClick={(e) => {
+              shouldCloseMenu && closeMenu();
               scrollAction('PROJECTS');
             }}
           >
             Projects
           </span>
-          <span
+          {/* <span
             className={navItemClasses}
             onClick={(e) => {
               shouldCloseMenu && closeMenu();
@@ -39,7 +48,7 @@ const Navigation = ({ type, scrollAction, closeMenu }) => {
             }}
           >
             Resume
-          </span>
+          </span> */}
         </nav>
       </div>
     </>

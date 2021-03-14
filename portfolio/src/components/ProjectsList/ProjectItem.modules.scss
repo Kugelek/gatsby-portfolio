@@ -17,21 +17,26 @@
   }
 
   @media (max-width: 1500px) {
-    height: 80vh;
+    height: 95vh;
     width: 60vw;
   }
   @media (max-width: 1300px) {
-    height: 90vh;
+    height: 120vh;
     width: 80vw;
     margin-left: 0;
-    margin-top: 55vh;
+    margin-top: 65vh;
   }
   @media (max-width: 850px) {
-    height: 100vh;
+    height: 140vh;
   }
   @media (max-width: 650px) {
     width: 95vw;
-    height: 120vh;
+    height: 150vh;
+    margin-top: 75vh;
+  }
+  @media (max-width: 500px) {
+    height: 170vh;
+    margin-top: 85vh;
   }
   &::after {
     position: absolute;
@@ -149,7 +154,7 @@
   width: 40vw;
   background-color: rgba(orangered, 0.4);
   border: 20px solid rgba(orangered, 0.3);
-
+  z-index: 1000;
   position: absolute;
   top: -10%;
   left: -55%;
@@ -170,5 +175,6 @@
   }
   @media (max-width: 650px) {
     width: 95vw;
+    top: -40%;
   }
 }

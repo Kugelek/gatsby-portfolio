@@ -46,6 +46,12 @@
       cursor: pointer;
       font-weight: bold;
 
+      & > a:visited,
+      a:link,
+      a:active {
+        text-decoration: none;
+        color: inherit;
+      }
       border-radius: 3px;
       transition: 0.5s all ease-in-out;
       margin-top: 4.5rem;
