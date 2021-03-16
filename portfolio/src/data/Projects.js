@@ -39,10 +39,12 @@ export const Projects = [
       'A multiplayer online web game. Players are fighting each other ' +
       'in space as warships. They can shoot down their foes or trap them with use of deadly mines. In order to exceed your enemies, ' +
       'you can destroy metheors and gain points',
-    description:
+    description1:
       "Team project for my programming classes at the University of Gdansk. It's a multiplayer online web game. Players are fighting each other " +
       'in space as warships. They can shoot down their foes or trap them with use of deadly mines. In order to gain advantage over your enemies, ' +
-      "you can gain points by destroying metheors (yellow dots). Your personal record is saved after death in our database and you're able to start from scratch" +
+      'you can gain points by destroying metheors (yellow dots).',
+    description2:
+      "Your personal record is saved after death in our database and you're able to start from scratch" +
       'TeamShips.io uses Node.js microservice server to handle all the crucial operations with WebSockets in order to prevent client-side cheating',
     myAchievements: [
       'Implemented game logic – moving, aiming and shooting, fighting system, scores. Developed dynamic, real-time rendering using P5.js & WebSockets.',
