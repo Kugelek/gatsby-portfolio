@@ -36,7 +36,22 @@ const IndexPage = () => {
         break;
     }
   };
-  AOS.init();
+
+  let AOS;
+  useEffect(() => {
+    const AOS = require('aos');
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
+
+  // AOS.init();
 
   return (
     <>

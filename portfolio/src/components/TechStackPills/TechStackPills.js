@@ -10,6 +10,7 @@ const TechStackPills = ({ techs }) => {
           data-aos-easing="ease-in-quad"
           data-aos-duration="700"
           className="pills__item"
+          key={techItem}
         >
           {techItem}
         </li>

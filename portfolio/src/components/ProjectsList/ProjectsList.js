@@ -17,7 +17,11 @@ const ProjectsList = ({ projRef }) => {
       </h1>
       <ul className="projects__list">
         {Projects.map((projData) => (
-          <ProjectItem projectData={projData} photos={projData.photos} />
+          <ProjectItem
+            key={projData.name}
+            projectData={projData}
+            photos={projData.photos}
+          />
         ))}
       </ul>
 

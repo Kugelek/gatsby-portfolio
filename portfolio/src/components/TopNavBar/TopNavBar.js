@@ -5,9 +5,9 @@ import { Transition } from 'react-transition-group';
 import { CSSTransition } from 'react-transition-group';
 import Navigation from './Navigation';
 
-const handleScrollingEffects = (event) => {
-  console.log(window.scrollY);
-};
+// const handleScrollingEffects = (event) => {
+//   console.log(window.scrollY);
+// };
 
 const useDynamicWindowDimensions = () => {
   const [size, setSize] = useState([0, 0]);
@@ -24,11 +24,13 @@ const TopNavBar = ({ scrollAction }) => {
   const [windowWidth, windowwHeight] = useDynamicWindowDimensions();
 
   const [isMenuActive, setIsMenuActive] = useState(false);
-  useEffect(() => {
-    window.addEventListener('scroll', handleScrollingEffects);
 
-    return () => window.removeEventListener('scroll', handleScrollingEffects);
-  }, []);
+  //TODO percentage of read website
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScrollingEffects);
+
+  //   return () => window.removeEventListener('scroll', handleScrollingEffects);
+  // }, []);
 
   const navigation = (
     <nav className="topbar__nav">

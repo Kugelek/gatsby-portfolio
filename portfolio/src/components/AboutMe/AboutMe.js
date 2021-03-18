@@ -65,14 +65,18 @@ const AboutMe = ({ aboutmeRef }) => {
               <a href="mailto:poblocki.jakub@gmail.com">Hire me &#x2192;</a>
             </span>
             <div className="iconbox">
-              <a href="https://www.linkedin.com/in/jakub-pob%C5%82ocki-510a081a4/">
+              <a
+                href="https://www.linkedin.com/in/jakub-pob%C5%82ocki-510a081a4/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className="iconbox__icon"
                   src={Linkedin}
                   alt="linkedin icon"
                 />
               </a>
-              <a href="https://github.com/Kugelek">
+              <a href="https://github.com/Kugelek" target="_blank" rel="noopener noreferrer">
                 <img className="iconbox__icon" src={Github} alt="github icon" />
               </a>
             </div>

@@ -14,8 +14,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+
   @media (max-width: 1600px) {
     font-size: 57.5%;
+  }
+
+  @media (min-width: 2500px) {
+    font-size: 81.25%;
+  }
+  @media (min-width: 3800px) {
+    font-size: 125%;
   }
 }
 

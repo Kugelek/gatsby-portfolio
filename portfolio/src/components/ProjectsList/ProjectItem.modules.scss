@@ -1,7 +1,7 @@
 @import '../../variables';
 .projectitem {
   width: 50vw;
-  height: 67vh;
+  height: 72vh;
   background-color: white;
 
   color: $color-light-black;
@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   @media (max-width: 1700px) {
-    height: 70vh;
+    height: 75vh;
   }
 
   @media (max-width: 1500px) {
@@ -77,7 +77,6 @@
     font-size: 7rem;
     margin-bottom: 2rem;
     padding: 2rem 4rem;
-    cursor: pointer;
     transition: 0.3s all ease-in-out;
     text-align: center;
 
@@ -89,7 +88,7 @@
     }
 
     &:hover {
-      transform: scale(1.05) skew(-3deg) translateX(1rem);
+      transform: scale(1.05) skew(-3deg) translateX(-0.8rem);
       text-shadow: 4px 4px 9px rgba($color-primary, 0.2);
       color: $color-primary;
     }
@@ -143,6 +142,9 @@
       background-color: #efefef;
       box-shadow: 3px 3px black;
       transform: scale(1.05) translateY(-0.25rem);
+    }
+    &:active {
+      transform: scale(1.1) translateY(-0.75rem);
     }
 
     cursor: pointer;

@@ -32,6 +32,10 @@
       top: 100%;
       left: 30%;
     }
+    @media (max-width: 400px) {
+      width: 90vw;
+      left: 0%;
+    }
     height: auto;
     color: $color-light-black;
 
@@ -77,6 +81,9 @@
     @media (max-width: 550px) {
       top: 50%;
       left: 30%;
+    }
+    @media (max-width: 400px) {
+      left: 50%;
     }
     &::after {
       content: '';

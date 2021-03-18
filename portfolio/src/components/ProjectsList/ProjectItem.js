@@ -22,6 +22,7 @@ const ProjectItem = ({ projectData, photos }) => {
           showBullets={true}
           additionalClass="gallery"
           showNav={false}
+          showPlayButton={false}
         />
         <div
           data-aos="fade-zoom-in"
@@ -59,11 +60,15 @@ const ProjectItem = ({ projectData, photos }) => {
               alt="project details"
             />
           </span>
-          {projectData.github.length ?
-          <a href={projectData.github}>
-            <img className="projectitem__icon" src={GhIcon} alt="github" />
-          </a> : null
-          }
+          {projectData.github.length ? (
+            <a
+              href={projectData.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="projectitem__icon" src={GhIcon} alt="github" />
+            </a>
+          ) : null}
         </div>
       </article>
     </>

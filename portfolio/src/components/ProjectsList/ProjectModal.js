@@ -2,18 +2,9 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import './ProjectModal.modules.scss';
 const ProjectModal = ({ isActive, toggle, data }) => {
-  // const dynamicProjectClass =
   return (
     <>
-      {/* <CSSTransition
-        unmountOnExit
-        in={isActive}
-        timeout={{ appear: 1, enter: 10, exit: 1 }}
-        classNames="slide"
-        appear
-      > */}
-      {/* <div className={`project-modal ${dynamicProjectClass} `}> */}
-      <div
+      <article
         className={
           isActive ? 'project-modal  project-modal--active' : 'project-modal'
         }
@@ -32,9 +23,7 @@ const ProjectModal = ({ isActive, toggle, data }) => {
         <span className="exit-bg" onClick={(e) => toggle(false)}>
           <div className="exit"></div>
         </span>
-        <article className="project-modal__content">fsagfdsadf</article>
-      </div>
-      {/* </CSSTransition> */}
+      </article>
     </>
   );
 };
