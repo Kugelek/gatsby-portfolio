@@ -4,40 +4,26 @@ import './AboutMe.modules.scss';
 import MyPhoto from '../../images/myphoto.jpg';
 import Github from '../../images/github.png';
 import Linkedin from '../../images/linkedin.png';
+import AnimatedComponent from '../AnimatedComponent/AnimatedComponent';
 
 const AboutMe = ({ aboutmeRef }) => {
   return (
     <section ref={aboutmeRef} className="aboutme">
       <div className="aboutme__container--single">
-        <h3
-          data-aos="fade-zoom-in"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="700"
-          className="aboutme__heading"
-        >
-          About me
-        </h3>
+        <AnimatedComponent>
+          <h3 className="aboutme__heading">About me</h3>
+        </AnimatedComponent>
+
         <div className="aboutme__info">
-          <div
-            data-aos="fade-zoom-in"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="700"
-            className="aboutme__photo"
-          >
+          <AnimatedComponent containerClass="aboutme__photo">
             <img className="aboutme__img" src={MyPhoto} alt="me" />
-          </div>
+          </AnimatedComponent>
+
           <div className="aboutme__description">
-            <h4
-              data-aos="fade-zoom-in"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="300"
-              className="aboutme__subh"
-            >
-              Hi, I'm Kuba!
-            </h4>
+            <AnimatedComponent duration="300">
+              <h4 className="aboutme__subh"> Hi, I'm Kuba!</h4>
+            </AnimatedComponent>
+
             <p
               data-aos="fade-zoom-in"
               data-aos-offset="200"
@@ -76,7 +62,11 @@ const AboutMe = ({ aboutmeRef }) => {
                   alt="linkedin icon"
                 />
               </a>
-              <a href="https://github.com/Kugelek" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/Kugelek"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img className="iconbox__icon" src={Github} alt="github icon" />
               </a>
             </div>
