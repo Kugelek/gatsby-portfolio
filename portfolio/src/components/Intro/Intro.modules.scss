@@ -95,6 +95,11 @@
       font-size: 8rem;
       letter-spacing: 0.5rem;
       line-height: 8.5rem;
+      animation: none;
+    }
+    @media (max-width: 400px) {
+      font-size: 5rem;
+      text-shadow: none;
     }
   }
 
@@ -111,6 +116,9 @@
     @media (max-width: 800px) {
       left: 12%;
     }
+    @media (max-width: 450px) {
+      animation: horizontalFastEntrance 2.5s;
+    }
   }
   &__headline--horrev {
     position: absolute;
@@ -125,6 +133,9 @@
     }
     @media (max-width: 800px) {
       right: 14%;
+    }
+    @media (max-width: 450px) {
+      animation: reverseHorizontalFastEntrance 2.5s;
     }
   }
   &__headline--vert {
@@ -169,6 +180,10 @@
     cursor: pointer;
     padding: 0.5rem 0.5rem;
     animation: arrowUpAndDown 2s infinite;
+    @media (max-width: 600px) {
+      width: 40px;
+      animation: arrowUpAndDownSmall 2.5s infinite;
+    }
   }
 }
 
@@ -179,6 +194,19 @@
   30% {
     top: 87%;
     width: 60.5px;
+  }
+
+  100% {
+    top: 90%;
+  }
+}
+@keyframes arrowUpAndDownSmall {
+  0% {
+    top: 90%;
+  }
+  30% {
+    top: 87%;
+    width: 40px;
   }
 
   100% {
@@ -210,6 +238,22 @@
   }
   100% {
     bottom: 10%;
+  }
+}
+
+@keyframes horizontalFastEntrance {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+    left: 33%;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -247,6 +291,22 @@
   60% {
     opacity: 1;
     right: 28%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reverseHorizontalFastEntrance {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+    right: 33%;
   }
   100% {
     opacity: 1;

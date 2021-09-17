@@ -6,6 +6,7 @@ const AnimatedComponent = ({
   offset = '200',
   easing = 'ease-in-sine',
   duration = '700',
+  delay = '50',
   containerClass = null,
 }) => {
   return (
@@ -13,6 +14,7 @@ const AnimatedComponent = ({
       data-aos={effect}
       data-aos-offset={offset}
       data-aos-easing={easing}
+      data-aos-delay={delay}
       data-aos-duration={duration}
       className={containerClass ? containerClass : null}
     >
