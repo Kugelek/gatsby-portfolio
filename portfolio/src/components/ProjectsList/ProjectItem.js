@@ -16,6 +16,7 @@ const ProjectItem = ({ projectData, photos }) => {
           toggle={setIsModalActive}
           data={projectData}
         />
+
         <ImageGallery
           items={photos}
           thumbnailPosition={'bottom'}

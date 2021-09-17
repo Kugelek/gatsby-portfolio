@@ -30,8 +30,10 @@
     height: 140vh;
   }
   @media (max-width: 650px) {
-    width: 95vw;
+    width: 100vw;
     height: 150vh;
+    margin-left: -26vw;
+    margin-right: -10rem;
     margin-top: 75vh;
   }
   @media (max-width: 500px) {

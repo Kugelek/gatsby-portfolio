@@ -23,24 +23,18 @@ const AboutMe = ({ aboutmeRef }) => {
             <AnimatedComponent duration="300">
               <h4 className="aboutme__subh"> Hi, I'm Kuba!</h4>
             </AnimatedComponent>
+            <p>
+              <AnimatedComponent>
+                <p>I'm a front-end dev and I love creating web apps.</p>
+              </AnimatedComponent>
+              <AnimatedComponent offset="100" duration="1500">
+                <p>
+                  Ready for new challenges. Open to offers in Gdańsk and Gdynia.
+                  Or remote ones... :)
+                </p>
+              </AnimatedComponent>
+            </p>
 
-            <p
-              data-aos="fade-zoom-in"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="700"
-            >
-              I'm a front-end dev and I love creating web apps.
-            </p>
-            <p
-              data-aos="fade-zoom-in"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="1500"
-            >
-              Ready for new challenges. Open to offers in Gdańsk and Gdynia. Or
-              remote ones... :)
-            </p>
             <span
               data-aos="fade-zoom-in"
               data-aos-offset="100"
