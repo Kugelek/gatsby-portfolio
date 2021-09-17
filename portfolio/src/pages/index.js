@@ -18,8 +18,6 @@ const IndexPage = () => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  //TODO: refac to HOC so other gatsby pages can use it aswell
-  //or some context stuff idk
   const executeScroll = (destinationTag) => {
     switch (destinationTag) {
       case 'INTRO':
@@ -58,8 +56,6 @@ const IndexPage = () => {
       <Intro scrollAction={executeScroll} introRef={introRef} />
       <AboutMe aboutmeRef={aboutmeRef} />
       <ProjectsList projRef={projectsRef} />
-      {/* <Contact />
-      <FindCv /> */}
       <Footer />
     </>
   );
