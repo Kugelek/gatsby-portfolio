@@ -21,25 +21,17 @@
     padding: 0.5rem 1.5rem;
     min-width: 30rem;
     margin: 2vw;
-    // background-color: white;
     font-size: 3rem;
-
     z-index: 20000 !important;
     width: 5rem;
     height: 5rem;
     cursor: pointer;
-
     color: white;
     transition: 0.4s all ease-out;
-
-    // transform: scale(0.025);
-    &:hover {
-    }
   }
 }
 
 .nav-mobile {
-  // position: absolute;
   position: fixed;
   width: 30rem;
   height: 30rem;
@@ -49,18 +41,7 @@
   padding-left: 10rem;
   padding-top: 20rem;
   left: -25%;
-  // background-color: orange;
-
   transform: scale(0.025);
-  // display: flex;
-  // flex-direction: column;
-
-  // top: 10%;
-  // left: 10%;
-  // background-color: $color-primary;
-  // width: 20rem;
-  // height: 20rem;
-  // transition: all 5.5s ease-in-out;
 }
 
 .bg {

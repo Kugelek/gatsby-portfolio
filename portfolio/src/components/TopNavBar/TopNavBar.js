@@ -5,10 +5,6 @@ import { Transition } from 'react-transition-group';
 import { CSSTransition } from 'react-transition-group';
 import Navigation from './Navigation';
 
-// const handleScrollingEffects = (event) => {
-//   console.log(window.scrollY);
-// };
-
 const useDynamicWindowDimensions = () => {
   const [size, setSize] = useState([0, 0]);
   useLayoutEffect(() => {

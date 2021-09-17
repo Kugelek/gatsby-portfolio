@@ -51,8 +51,6 @@ const IndexPage = () => {
     }
   });
 
-  // AOS.init();
-
   return (
     <>
       <SEO title="Home" />

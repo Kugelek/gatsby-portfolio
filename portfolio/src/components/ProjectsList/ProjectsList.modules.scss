@@ -1,9 +1,6 @@
 @import '../../variables';
 .projects {
-  // width: 110vw;
-  // max-width: 100vw;
   height: auto;
-  // background-color: $color-primary;
   background: rgb(10, 41, 112);
   background: linear-gradient(
     143deg,
@@ -25,9 +22,6 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 5rem;
-    & > * {
-      // width: 80vw;
-    }
   }
   &__title {
     color: white;
