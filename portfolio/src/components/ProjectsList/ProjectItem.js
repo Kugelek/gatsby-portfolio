@@ -23,6 +23,7 @@ const ProjectItem = ({ projectData, photos }) => {
           showBullets={true}
           additionalClass="gallery"
           showNav={false}
+          lazyLoad={true}
           showPlayButton={false}
         />
         <div
