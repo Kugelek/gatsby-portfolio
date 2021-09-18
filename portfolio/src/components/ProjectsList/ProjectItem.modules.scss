@@ -42,10 +42,15 @@
   }
 
   @media (max-width: 360px) {
-    margin-right: 5vw;
-    margin-left: 5vw;
-    width: 90vw;
+    margin-right: -25vw;
+    width: 95vw;
   }
+
+  @media (max-width: 300px) {
+    width: 100vw;
+    margin-right: -16vw;
+  }
+
   &::after {
     position: absolute;
     top: -5%;
@@ -94,6 +99,10 @@
     @media (max-width: 650px) {
       font-size: 5rem;
     }
+
+    @media (max-width: 400px) {
+      font-size: 3rem;
+    }
   }
   &__description {
     font-size: 2rem;
@@ -130,6 +139,13 @@
     align-items: center;
     bottom: 0%;
     right: 0%;
+
+    & > * {
+      @media (max-width: 300px) {
+        margin-right: -2rem;
+        margin-left: 2rem;
+      }
+    }
   }
   &__icon {
     width: 8rem;

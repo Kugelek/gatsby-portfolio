@@ -38,7 +38,7 @@ const IndexPage = () => {
   useEffect(() => {
     const AOS = require('aos');
     AOS.init({
-      once: false,
+      once: true,
     });
   }, []);
 
