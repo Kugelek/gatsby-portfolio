@@ -40,6 +40,12 @@
     height: 170vh;
     margin-top: 85vh;
   }
+
+  @media (max-width: 360px) {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    width: 90vw;
+  }
   &::after {
     position: absolute;
     top: -5%;
@@ -87,12 +93,6 @@
     }
     @media (max-width: 650px) {
       font-size: 5rem;
-    }
-
-    &:hover {
-      transform: scale(1.05) skew(-3deg) translateX(-0.8rem);
-      text-shadow: 4px 4px 9px rgba($color-primary, 0.2);
-      color: $color-primary;
     }
   }
   &__description {

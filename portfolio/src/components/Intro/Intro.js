@@ -10,8 +10,8 @@ const Intro = ({ scrollAction, introRef }) => {
         <h1 className="intro__headline intro__headline--hor"> developer</h1>
         <h1 className="intro__headline intro__headline--vert">frontend </h1>
         <h1 className="intro__headline--main">Jakub Pobłocki </h1>
-        <h1 className="intro__headline intro__headline--horrev"> webdev</h1>
-        <h1 className="intro__headline intro__headline--vertrev"> js fan</h1>
+        <h1 className="intro__headline intro__headline--horrev"> software</h1>
+        <h1 className="intro__headline intro__headline--vertrev"> engineer</h1>
       </div>
       <AnimatedComponent
         containerClass="intro__scrolldown"

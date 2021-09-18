@@ -40,13 +40,13 @@ export const Projects = [
       'in space as warships. Shoot down your foes or trap them with use of deadly mines! In order to exceed your enemies, ' +
       'you can destroy valuable metheors and acquire points',
     description1:
-      "Team project . It's a multiplayer online web game. Players are fighting each other " +
+      "Team project. It's a multiplayer online web game. Players are fighting each other " +
       'in space as warships. They can shoot down their foes or trap them with use of deadly mines.',
     description2:
       "Your personal record is saved after death in our database and you're able to start from scratch. " +
       'TeamShips.io uses Node.js microservice server to handle all the crucial operations with WebSockets in order to prevent client-side cheating.',
     myAchievements: [
-      'Implemented game logic – moving, aiming and shooting, fighting system, scores',
+      'Implemented game logic – moving, aiming and shooting, fighting system and scores',
       'Developed dynamic, real-time rendering using P5.js & WebSockets.',
       'Created a microservice Node.js/Express/Socket.io game server to manage game flow and communicate with both Spring backend app (via REST API) and front app (sockets).',
       'As my team was focused on Java/Spring part of the app, I conducted meetings to discuss available solutions, architecture and to ensure efficient workflow ',
@@ -86,10 +86,10 @@ export const Projects = [
 
     description1:
       "Web app using Natural Language Processing to analyze sentiment of song's lyrics. Beginner-level artists and musicians might find the app interesting" +
-      'since they can easily gather information about overused words in their own song as long as they upload its lyrics on Genius. They can make sure' +
-      "that the song's vibe based on lyrics is indeed as it was planned.",
+      'since they can easily gather information about overused words in their own song as long as they upload its lyrics on Genius. They can make sure ' +
+      "they like the song's vibe.",
     description2:
-      'RapAnalyzer might be also used by casual users who just wants to have fun doing research' +
+      'RapAnalyzer might be also used by casual users who just wants to have fun doing research ' +
       'about songs they recently liked. I plan to develop the application further by adding various features i.e generating stats on set of songs, doing rhyme analysis etc',
 
     myAchievements: [

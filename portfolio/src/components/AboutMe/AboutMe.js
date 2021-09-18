@@ -11,7 +11,7 @@ const AboutMe = ({ aboutmeRef }) => {
     <section ref={aboutmeRef} className="aboutme">
       <div className="aboutme__container--single">
         <AnimatedComponent>
-          <h3 className="aboutme__heading">About me</h3>
+          <h3 className="aboutme__heading ">About me</h3>
         </AnimatedComponent>
 
         <div className="aboutme__info">
